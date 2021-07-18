@@ -1,14 +1,14 @@
 /*body {
     font-family: 'cursive', sans-serif !important;
-    color: #990099aa;
+    color: #9ee99ee1;
   }*/
 
   .jumbotron {
-    background-image: url("../images/image.png");
+    background-image: url("../images/bacteria.PNG");
     background-size: 100% 100%;
     text-align: center;
     font-family: 'cursive', sans-serif !important;
-    color: #000a99aa;
+    color: #e8f7fa;
   }
 
   .font { font-family: 'Gill Sans', sans-serif;font-size:14px; }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
+  <title>Belly Button Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -20,54 +20,47 @@
     <div class="row">
       <div class="display-4 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <p>Use the charts below to explore the dataset</p>
       </div>
     </div>
-    <div class="font"><p>Refer to the charts below to identify the different bacteria species found in each of our candidates. OTU IDs are the ID numbers of the bacterial species found in this person's navel. Please note that each ID 
-      is distinct.</p></div>
+    <div class="font"
+    style="font-size:15px"><p></p> The charts below identify the bacteria species found in each subject.</p></div>
     <div class="row">
       <div class="col-md-2 ">
         <div class="well" >
-          <h5>Test Subject ID No.:</h5>
-          <!-- <select id="selDataset"></select> -->
+          <h5>Sample ID:</h5>
+         
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
+    
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+            <h3 class="panel-title">Demographics</h3>
           </div>
           <div id="sample-metadata" class="panel-body bg-info"></div>
         </div>
       </div>
-      <div class="col-md-8 bg-info">
+
+      <div class="col-md-5">
         <div id="bar"></div>
       </div>
-      <div class="col-md-2 info"><p>This bar chart gives the top 10 species of bacteria found in selected subject. </p></div>
-      
-      </div>
-      <p><br><br></p>
-      <div class="row">
-        <div class="col-md-2 info"><p>Refer to the gauge chart to understand how washing frequency might affect the naval bacterial sample.</p></div>
-      <div class="col-md-10 bg-info">
+      <div class="col-md-5">
         <div id="gauge"></div>
       </div>
-      </div>
-        
-    <p>
-      <br><br>
-   </p>
+    </div>
     <div class="row">
-      <div class="col-md-2 info"><p>Hover over the bubbles to get the sample details.</p></div>
-      <div class="col-md-10  bg-info">
+      <div class="col-md-12">
         <div id="bubble"></div>
       </div>
     </div>
+  </div>
+</div>
   
   <p></p>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="static/js/plot.js"></script>
+  <script src="static/js/charts.js"></script>
   <script src="samples.json"></script>
   
 
